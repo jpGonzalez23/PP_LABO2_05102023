@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juanp\\Source\\Repos\\PP_LABO2_05102023\\TP_Integrador_2C\\TP_Integrador_2C.csproj": {}
+    "C:\\Users\\juanp\\source\\repos\\PP_LABO2_05102023\\TP_Integrador_2C\\TP_Integrador_2C.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juanp\\Source\\Repos\\PP_LABO2_05102023\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\juanp\\source\\repos\\PP_LABO2_05102023\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juanp\\Source\\Repos\\PP_LABO2_05102023\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\juanp\\source\\repos\\PP_LABO2_05102023\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\juanp\\Source\\Repos\\PP_LABO2_05102023\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\juanp\\source\\repos\\PP_LABO2_05102023\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\juanp\\Source\\Repos\\PP_LABO2_05102023\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
@@ -59,12 +59,12 @@
         }
       }
     },
-    "C:\\Users\\juanp\\Source\\Repos\\PP_LABO2_05102023\\TP_Integrador_2C\\TP_Integrador_2C.csproj": {
+    "C:\\Users\\juanp\\source\\repos\\PP_LABO2_05102023\\TP_Integrador_2C\\TP_Integrador_2C.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juanp\\Source\\Repos\\PP_LABO2_05102023\\TP_Integrador_2C\\TP_Integrador_2C.csproj",
+        "projectUniqueName": "C:\\Users\\juanp\\source\\repos\\PP_LABO2_05102023\\TP_Integrador_2C\\TP_Integrador_2C.csproj",
         "projectName": "TP_Integrador_2C",
-        "projectPath": "C:\\Users\\juanp\\Source\\Repos\\PP_LABO2_05102023\\TP_Integrador_2C\\TP_Integrador_2C.csproj",
+        "projectPath": "C:\\Users\\juanp\\source\\repos\\PP_LABO2_05102023\\TP_Integrador_2C\\TP_Integrador_2C.csproj",
         "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\juanp\\Source\\Repos\\PP_LABO2_05102023\\TP_Integrador_2C\\obj\\",
         "projectStyle": "PackageReference",
@@ -83,8 +83,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\juanp\\Source\\Repos\\PP_LABO2_05102023\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\juanp\\Source\\Repos\\PP_LABO2_05102023\\Entidades\\Entidades.csproj"
+              "C:\\Users\\juanp\\source\\repos\\PP_LABO2_05102023\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\juanp\\source\\repos\\PP_LABO2_05102023\\Entidades\\Entidades.csproj"
               }
             }
           }
