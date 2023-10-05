@@ -1,5 +1,4 @@
-//using Entidades;
-//using Entidades.Modelos;
+using Entidades;
 
 namespace TP_Integrador_2C
 {
@@ -40,10 +39,6 @@ namespace TP_Integrador_2C
         /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            this.txtPrimerOperador.Clear();
-            this.txtSegundoOperador.Clear();
-            this.lblResultado.Text = "Resultado: ";
-            this.cmbOperacion.Text = null;
         }
 
         /// <summary>
@@ -55,24 +50,47 @@ namespace TP_Integrador_2C
         {
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         private void SetResultado()
         {
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtPrimerOperador_TextChanged(object sender, EventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtSegundoOperador_TextChanged(object sender, EventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbBinario_CheckedChanged(object sender, EventArgs e)
         {
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbDecimal_CheckedChanged(object sender, EventArgs e)
         {
 

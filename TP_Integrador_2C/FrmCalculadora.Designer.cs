@@ -41,6 +41,8 @@
             btnOperar = new Button();
             btnLimpiar = new Button();
             btnCerrar = new Button();
+            listBox1 = new ListBox();
+            lblHistorial = new Label();
             gpbSistema.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,13 +51,14 @@
             lblResultado.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblResultado.Location = new Point(12, 9);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(380, 40);
+            lblResultado.Size = new Size(501, 40);
             lblResultado.TabIndex = 0;
+            lblResultado.Text = "Resultado:";
             // 
             // rdbBinario
             // 
             rdbBinario.AutoSize = true;
-            rdbBinario.Location = new Point(6, 33);
+            rdbBinario.Location = new Point(132, 33);
             rdbBinario.Name = "rdbBinario";
             rdbBinario.Size = new Size(62, 19);
             rdbBinario.TabIndex = 1;
@@ -66,7 +69,7 @@
             // rdbDecimal
             // 
             rdbDecimal.AutoSize = true;
-            rdbDecimal.Location = new Point(100, 33);
+            rdbDecimal.Location = new Point(6, 33);
             rdbDecimal.Name = "rdbDecimal";
             rdbDecimal.Size = new Size(68, 19);
             rdbDecimal.TabIndex = 2;
@@ -172,11 +175,33 @@
             btnCerrar.UseVisualStyleBackColor = true;
             btnCerrar.Click += btnCerrar_Click;
             // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(523, 127);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(210, 124);
+            listBox1.TabIndex = 13;
+            // 
+            // lblHistorial
+            // 
+            lblHistorial.AutoSize = true;
+            lblHistorial.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblHistorial.Location = new Point(523, 95);
+            lblHistorial.Name = "lblHistorial";
+            lblHistorial.RightToLeft = RightToLeft.No;
+            lblHistorial.Size = new Size(86, 25);
+            lblHistorial.TabIndex = 14;
+            lblHistorial.Text = "Historial:";
+            // 
             // FrmCalculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(530, 276);
+            ClientSize = new Size(749, 276);
+            Controls.Add(lblHistorial);
+            Controls.Add(listBox1);
             Controls.Add(btnCerrar);
             Controls.Add(btnLimpiar);
             Controls.Add(btnOperar);
@@ -216,5 +241,7 @@
         private Button btnOperar;
         private Button btnLimpiar;
         private Button btnCerrar;
+        private ListBox listBox1;
+        private Label lblHistorial;
     }
 }

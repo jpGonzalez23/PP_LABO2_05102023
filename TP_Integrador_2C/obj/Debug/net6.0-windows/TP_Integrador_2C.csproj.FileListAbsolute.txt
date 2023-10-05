@@ -54,3 +54,23 @@ C:\Users\juanp\OneDrive\Documentos\Facultad\Segundo Cuatrimestre\PyL-II-TN\TP-In
 C:\Users\juanp\OneDrive\Documentos\Facultad\Segundo Cuatrimestre\PyL-II-TN\TP-Integrador\TP_Integrador_2C\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.pdb
 C:\Users\juanp\OneDrive\Documentos\Facultad\Segundo Cuatrimestre\PyL-II-TN\TP-Integrador\TP_Integrador_2C\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.genruntimeconfig.cache
 C:\Users\juanp\OneDrive\Documentos\Facultad\Segundo Cuatrimestre\PyL-II-TN\TP-Integrador\TP_Integrador_2C\TP_Integrador_2C\obj\Debug\net6.0-windows\ref\TP_Integrador_2C.dll
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\bin\Debug\net6.0-windows\TP_Integrador_2C.exe
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\bin\Debug\net6.0-windows\TP_Integrador_2C.deps.json
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\bin\Debug\net6.0-windows\TP_Integrador_2C.runtimeconfig.json
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\bin\Debug\net6.0-windows\TP_Integrador_2C.dll
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\bin\Debug\net6.0-windows\TP_Integrador_2C.pdb
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\bin\Debug\net6.0-windows\Entidades.dll
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\bin\Debug\net6.0-windows\Entidades.pdb
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.csproj.AssemblyReference.cache
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.FrmCalculadora.resources
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.csproj.GenerateResource.cache
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.AssemblyInfoInputs.cache
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.AssemblyInfo.cs
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.csproj.CoreCompileInputs.cache
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.csproj.CopyComplete
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.dll
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\refint\TP_Integrador_2C.dll
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.pdb
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\TP_Integrador_2C.genruntimeconfig.cache
+C:\Users\juanp\Source\Repos\PP_LABO2_05102023\TP_Integrador_2C\obj\Debug\net6.0-windows\ref\TP_Integrador_2C.dll
