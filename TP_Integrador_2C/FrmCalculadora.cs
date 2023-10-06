@@ -39,7 +39,8 @@ namespace TP_Integrador_2C
             operador = (char)this.cmbOperacion.SelectedItem;
             this.calculadora.Calcular(operador);
             this.calculadora.ActualizaHistorialDeOperaciones(operador);
-            this.lblResultado.Text = $"Resultado: {calculadora.Resultado.Valor}"; this.MostrarHistorial();
+            this.lblResultado.Text = $"Resultado: {calculadora.Resultado.Valor}"; 
+            this.MostrarHistorial();
         }
 
         /// <summary>

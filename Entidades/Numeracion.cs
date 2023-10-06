@@ -66,51 +66,5 @@
         {
             return !(n1 == n2);
         }
-
-        /// <summary>
-        /// Metodo para sumar dos numeros del tipo numeracion
-        /// </summary>
-        /// <param name="n1">Ingreso de un numero tipo numeracion</param>
-        /// <param name="n2">Ingreso de un numero tipo numeracion</param>
-        /// <returns></returns>
-        public static Numeracion operator +(Numeracion n1, Numeracion n2)
-        {
-            double suma = n1.ValorNumerico + n2.ValorNumerico;
-            return 
-        }
-
-        /// <summary>
-        /// Metodo para restar dos numeros del tipo numeracion
-        /// </summary>
-        /// <param name="n1">Ingreso de un numero tipo numeracion</param>
-        /// <param name="n2">Ingreso de un numero tipo numeracionparam>
-        /// <returns></returns>
-        public static Numeracion operator -(Numeracion n1, Numeracion n2)
-        {
-            double resta = n1.ValorNumerico - n2.ValorNumerico;
-            return n1.CambiarSistemaDeNumeracion(ESistema.Decimal);
-        }
-
-        /// <summary>
-        /// Metodo para multiplicar dos numeros del tipo numeracion
-        /// </summary>
-        /// <param name="n1">Ingreso de un numero tipo numeracion</param>
-        /// <param name="n2">Ingreso de un numero tipo numeracion</param>
-        /// <returns></returns>
-        public static Numeracion operator *(Numeracion n1, Numeracion n2)
-        {
-            
-        }
-
-        /// <summary>
-        /// Metodo para divir dos numeros del tipo numeracion
-        /// </summary>
-        /// <param name="n1">Ingreso de un numero tipo numeracion</param>
-        /// <param name="n2">Ingreso de un numero tipo numeracion</param>
-        /// <returns></returns>
-        public static Numeracion operator /(Numeracion n1, Numeracion n2)
-        {
-            
-        }
     }
 }

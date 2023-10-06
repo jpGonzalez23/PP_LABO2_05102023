@@ -52,7 +52,16 @@ namespace Entidades
             {
                 do
                 {
-                    string auxBinaro = this.ValorNumerico.ToString();
+                    string valorBinario = string.Empty;
+
+                    do
+                    {
+                        valorBinario = ((int)this.ValorNumerico % 2) + valorBinario;
+
+                    } while (this.ValorNumerico >= 2);
+                    valorBinario = valor + valorBinario;
+
+                    return valorBinario;
 
                 } while (true);
             }
