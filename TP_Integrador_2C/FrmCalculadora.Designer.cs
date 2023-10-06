@@ -35,13 +35,13 @@
             lblPrimerOperador = new Label();
             lblOperador = new Label();
             lblSegundoOperador = new Label();
-            txtPrimerOperador = new TextBox();
-            txtSegundoOperador = new TextBox();
+            txtPrimerOperando = new TextBox();
+            txtSegundoOperando = new TextBox();
             cmbOperacion = new ComboBox();
             btnOperar = new Button();
             btnLimpiar = new Button();
             btnCerrar = new Button();
-            listBox1 = new ListBox();
+            lstHistorial = new ListBox();
             lblHistorial = new Label();
             gpbSistema.SuspendLayout();
             SuspendLayout();
@@ -58,7 +58,7 @@
             // rdbBinario
             // 
             rdbBinario.AutoSize = true;
-            rdbBinario.Location = new Point(132, 33);
+            rdbBinario.Location = new Point(117, 33);
             rdbBinario.Name = "rdbBinario";
             rdbBinario.Size = new Size(62, 19);
             rdbBinario.TabIndex = 1;
@@ -69,7 +69,7 @@
             // rdbDecimal
             // 
             rdbDecimal.AutoSize = true;
-            rdbDecimal.Location = new Point(6, 33);
+            rdbDecimal.Location = new Point(21, 33);
             rdbDecimal.Name = "rdbDecimal";
             rdbDecimal.Size = new Size(68, 19);
             rdbDecimal.TabIndex = 2;
@@ -119,21 +119,21 @@
             lblSegundoOperador.TabIndex = 7;
             lblSegundoOperador.Text = "Segundo Operador:";
             // 
-            // txtPrimerOperador
+            // txtPrimerOperando
             // 
-            txtPrimerOperador.Location = new Point(12, 167);
-            txtPrimerOperador.Name = "txtPrimerOperador";
-            txtPrimerOperador.Size = new Size(154, 23);
-            txtPrimerOperador.TabIndex = 5;
-            txtPrimerOperador.TextChanged += txtPrimerOperador_TextChanged;
+            txtPrimerOperando.Location = new Point(12, 167);
+            txtPrimerOperando.Name = "txtPrimerOperando";
+            txtPrimerOperando.Size = new Size(154, 23);
+            txtPrimerOperando.TabIndex = 5;
+            txtPrimerOperando.TextChanged += txtPrimerOperador_TextChanged;
             // 
-            // txtSegundoOperador
+            // txtSegundoOperando
             // 
-            txtSegundoOperador.Location = new Point(340, 167);
-            txtSegundoOperador.Name = "txtSegundoOperador";
-            txtSegundoOperador.Size = new Size(173, 23);
-            txtSegundoOperador.TabIndex = 8;
-            txtSegundoOperador.TextChanged += txtSegundoOperador_TextChanged;
+            txtSegundoOperando.Location = new Point(340, 167);
+            txtSegundoOperando.Name = "txtSegundoOperando";
+            txtSegundoOperando.Size = new Size(173, 23);
+            txtSegundoOperando.TabIndex = 8;
+            txtSegundoOperando.TextChanged += txtSegundoOperador_TextChanged;
             // 
             // cmbOperacion
             // 
@@ -175,20 +175,20 @@
             btnCerrar.UseVisualStyleBackColor = true;
             btnCerrar.Click += btnCerrar_Click;
             // 
-            // listBox1
+            // lstHistorial
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(523, 127);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(210, 124);
-            listBox1.TabIndex = 13;
+            lstHistorial.FormattingEnabled = true;
+            lstHistorial.ItemHeight = 15;
+            lstHistorial.Location = new Point(523, 82);
+            lstHistorial.Name = "lstHistorial";
+            lstHistorial.Size = new Size(210, 169);
+            lstHistorial.TabIndex = 13;
             // 
             // lblHistorial
             // 
             lblHistorial.AutoSize = true;
             lblHistorial.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblHistorial.Location = new Point(523, 95);
+            lblHistorial.Location = new Point(519, 52);
             lblHistorial.Name = "lblHistorial";
             lblHistorial.RightToLeft = RightToLeft.No;
             lblHistorial.Size = new Size(86, 25);
@@ -201,13 +201,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(749, 276);
             Controls.Add(lblHistorial);
-            Controls.Add(listBox1);
+            Controls.Add(lstHistorial);
             Controls.Add(btnCerrar);
             Controls.Add(btnLimpiar);
             Controls.Add(btnOperar);
             Controls.Add(cmbOperacion);
-            Controls.Add(txtSegundoOperador);
-            Controls.Add(txtPrimerOperador);
+            Controls.Add(txtSegundoOperando);
+            Controls.Add(txtPrimerOperando);
             Controls.Add(lblSegundoOperador);
             Controls.Add(lblOperador);
             Controls.Add(lblPrimerOperador);
@@ -219,6 +219,7 @@
             Name = "FrmCalculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora Gonzalez Juan Pablo";
+            FormClosing += FrmCalculadora_FormClosing;
             Load += FrmCalculadora_Load;
             gpbSistema.ResumeLayout(false);
             gpbSistema.PerformLayout();
@@ -235,13 +236,13 @@
         private Label lblPrimerOperador;
         private Label lblOperador;
         private Label lblSegundoOperador;
-        private TextBox txtPrimerOperador;
-        private TextBox txtSegundoOperador;
+        private TextBox txtPrimerOperando;
+        private TextBox txtSegundoOperando;
         private ComboBox cmbOperacion;
         private Button btnOperar;
         private Button btnLimpiar;
         private Button btnCerrar;
-        private ListBox listBox1;
+        private ListBox lstHistorial;
         private Label lblHistorial;
     }
 }
