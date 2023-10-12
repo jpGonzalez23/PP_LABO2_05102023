@@ -14,61 +14,90 @@ namespace Entidades
         {
             get
             {
-                return double.Parse(base.Valor);
+                return (double) this;
             }
         }
 
         public override Numeracion CambiarSistemaDeNumeracion(ESistema sistema)
         {
-            if (sistema == ESistema.Decimal)
-            {
-                return this;
-            }
+            //if (sistema == ESistema.Decimal)
+            //{
+            //    return this;
+            //}
 
-            return new SistemaDecimal(this.ValorNumerico.ToString());
+            //return new SistemaDecimal(this.ValorNumerico.ToString());
+
+            switch(sistema)
+            {
+                case ESistema.Binario:
+                    return this.DecimalABinario();
+            }
+            return this;
         }
 
         protected override bool EsNumeracionValida(string valor)
         {
-            if (base.EsNumeracionValida(valor) && this.EsSistemaDecimalValido(valor))
-            {
-                return true;
-            }
-            return false;
+            //if (base.EsNumeracionValida(valor) && this.EsSistemaDecimalValido(valor))
+            //{
+            //    return true;
+            //}
+            //return false;
+
+            return base.EsNumeracionValida(valor) && this.EsSistemaDecimalValido(valor);
         }
 
         private bool EsSistemaDecimalValido(string valor) 
         {
-            if (double.TryParse(valor, out double auxValor))
-            {
-                return true;
-            }
-            return false;
+            //if (double.TryParse(valor, out double auxValor))
+            //{
+            //    return true;
+            //}
+            //return false;
+
+            return double.TryParse(valor, out double resultado);
         }
 
         private SistemaBinario DecimalABinario()
         {
-            if (this.ValorNumerico > 0)
+            //if (this.ValorNumerico > 0)
+            //{
+            //    do
+            //    {
+            //        string valorBinario = string.Empty;
+
+            //        do
+            //        {
+            //            valorBinario = ((int)this.ValorNumerico % 2) + valorBinario;
+
+            //        } while (this.ValorNumerico >= 2);
+            //        valorBinario = valor + valorBinario;
+
+            //        return valorBinario;
+
+            //    } while (true);
+            //}
+            //else
+            //{
+            //    return new SistemaBinario(Numeracion.msgError);
+            //}
+
+            int valor = (int)this.ValorNumerico;
+
+            if (valor > 0)
             {
-                do
+                string binario = string.Empty;
+
+                while(valor > 0)
                 {
-                    string valorBinario = string.Empty;
+                    int resto = valor % 2;
+                    valor /= 2;
 
-                    do
-                    {
-                        valorBinario = ((int)this.ValorNumerico % 2) + valorBinario;
-
-                    } while (this.ValorNumerico >= 2);
-                    valorBinario = valor + valorBinario;
-
-                    return valorBinario;
-
-                } while (true);
+                    binario = resto + binario;
+                }
+                return binario;
             }
-            else
-            {
-                return new SistemaBinario(Numeracion.msgError);
-            }
+
+            return Numeracion.msgError;
         }
 
         public static implicit operator SistemaDecimal(double valor)
@@ -78,7 +107,7 @@ namespace Entidades
 
         public static implicit operator SistemaDecimal(string valor)
         {
-            return new SistemaDecimal((string)valor);
+            return new SistemaDecimal(valor);
         }
     }
 }

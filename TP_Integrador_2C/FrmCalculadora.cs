@@ -34,12 +34,16 @@ namespace TP_Integrador_2C
         private void btnOperar_Click(object sender, EventArgs e)
         {
             char operador;
+
             calculadora.PrimerOperador = this.GetOperador(this.txtPrimerOperando.Text);
             calculadora.SegundoOperador = this.GetOperador(this.txtSegundoOperando.Text);
+
             operador = (char)this.cmbOperacion.SelectedItem;
+
             this.calculadora.Calcular(operador);
             this.calculadora.ActualizaHistorialDeOperaciones(operador);
-            this.lblResultado.Text = $"Resultado: {calculadora.Resultado.Valor}"; 
+            this.lblResultado.Text = $"Resultado: {calculadora.Resultado.Valor}";
+            
             this.MostrarHistorial();
         }
 
@@ -93,7 +97,7 @@ namespace TP_Integrador_2C
         /// <param name="e"></param>
         private void txtPrimerOperador_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         /// <summary>
@@ -113,7 +117,7 @@ namespace TP_Integrador_2C
         /// <param name="e"></param>
         private void rdbBinario_CheckedChanged(object sender, EventArgs e)
         {
-            Calculadora.Sistema = ESistema.Decimal;
+            Calculadora.Sistema = ESistema.Binario;
         }
 
         /// <summary>

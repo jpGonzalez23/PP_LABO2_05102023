@@ -14,23 +14,32 @@ namespace Entidades
         {
             get
             {
-                return double.Parse(base.Valor);
+                //return double.Parse(base.Valor);
+                return (double)this.CambiarSistemaDeNumeracion(ESistema.Decimal);
             }
         }
 
         public override Numeracion CambiarSistemaDeNumeracion(ESistema sistema)
         {
-            if (sistema == ESistema.Binario)
+            //if (sistema == ESistema.Binario)
+            //{
+            //    return this;
+            //}
+
+            //return new SistemaBinario(this.ValorNumerico.ToString());
+
+            switch(sistema)
             {
-                return this;
+                case ESistema.Decimal:
+                    return this.BinarioADecimal();
             }
 
-            return new SistemaBinario(this.ValorNumerico.ToString());
+            return this;
         }
 
         protected override bool EsNumeracionValida(string valor)
         {
-            return base.EsNumeracionValida(valor) && this.EsSistemaBinarioValido(valor) ? true : false;
+            return base.EsNumeracionValida(valor) && this.EsSistemaBinarioValido(valor);
         }
 
         private bool EsSistemaBinarioValido(string valor)
@@ -48,25 +57,43 @@ namespace Entidades
 
         private SistemaDecimal BinarioADecimal()
         {
-            if (this.ValorNumerico.ToString() != Numeracion.msgError)
-            {
-                double resultado = 0;
-                int longitud = base.Valor.Length;
+            //if (this.ValorNumerico.ToString() != Numeracion.msgError)
+            //{
+            //    double resultado = 0;
+            //    int longitud = base.Valor.Length;
 
-                for (int i = 0; i < longitud - 1; i++)
-                {
-                    if (base.Valor[i] == '1')
-                    {
-                        int exponente = longitud - i - 1;
-                        resultado = Math.Pow(2, exponente);
-                    }
-                }
-                return new SistemaDecimal(resultado.ToString());
-            }
-            else
+            //    for (int i = 0; i < longitud - 1; i++)
+            //    {
+            //        if (base.Valor[i] == '1')
+            //        {
+            //            int exponente = longitud - i - 1;
+            //            resultado = Math.Pow(2, exponente);
+            //        }
+            //    }
+            //    return new SistemaDecimal(resultado.ToString());
+            //}
+            //else
+            //{
+            //    return new SistemaDecimal(double.MinValue.ToString());
+            //}
+
+            if (base.valor != Numeracion.msgError)
             {
-                return new SistemaDecimal(double.MinValue.ToString());
+                int potencia = base.Valor.Length - 1;
+                int resultado = 0;
+
+                foreach (char c in base.Valor)
+                {
+                    if (c == '1')
+                    {
+                        resultado = resultado + (int)Math.Pow(2, potencia);
+                    }
+                    potencia--;
+                }
+                return resultado;
             }
+
+            return double.MinValue;
         }
 
         public static implicit operator SistemaBinario(string valor)

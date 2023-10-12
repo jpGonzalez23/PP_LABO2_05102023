@@ -181,7 +181,7 @@
             lstHistorial.ItemHeight = 15;
             lstHistorial.Location = new Point(523, 82);
             lstHistorial.Name = "lstHistorial";
-            lstHistorial.Size = new Size(210, 169);
+            lstHistorial.Size = new Size(572, 169);
             lstHistorial.TabIndex = 13;
             // 
             // lblHistorial
@@ -199,7 +199,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(749, 276);
+            ClientSize = new Size(1107, 276);
             Controls.Add(lblHistorial);
             Controls.Add(lstHistorial);
             Controls.Add(btnCerrar);
